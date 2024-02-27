@@ -78,7 +78,7 @@ int main(int argc, char** argv)
             std::cerr << "Can't create shader program: " << "DefaultShader" << std::endl;
             return -1;
         }
-
+        resourceManager.loadTexture("DefaultTexture", "res/textures/heart.png");
 
         GLuint points_vbo = 0;
         glGenBuffers(1, &points_vbo);
